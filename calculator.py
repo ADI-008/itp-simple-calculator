@@ -3,24 +3,31 @@ def add(x, y):
 
 
 def subtract(x, y):
-    pass
+    return x - y
 
 
 def divide(x, y):
-    pass
+    try:
+        z = x / y
+        return z
+    except ZeroDivisionError as error:
+        return "Invalid value for denominator, cant't divide by 0!"
 
 
 def multiply(x, y):
-    pass
+    return x * y
 
 
 def square(x):
-    pass
+    x = abs(x ** 2)
+    return x
 
 
 def power(x, y):
-    pass
+    z = abs(x ** y)
+    return z
 
 
 def sqrt(x):
-    pass
+    z = sqrt(abs(x))
+    return z
